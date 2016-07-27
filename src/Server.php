@@ -30,7 +30,7 @@ class Server extends AbstractIIDRequest
         $batchImportRequest->setApplication($application);
         $batchImportRequest->setApnsTokens($apnsTokens);
         $requestBody = $this->serializer->serialize($batchImportRequest, 'json');
-        $response = $this->request('post', 'v1:batchImport', $requestBody);
+        $response = $this->request('post', 'v1:batchImport', (string)$requestBody);
 
         return $this->serializer->deserialize($response, 'lutskanu\GoogleInstanceId\Response\BatchImportResponse', 'json');
     }
