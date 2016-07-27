@@ -1,0 +1,36 @@
+{
+  "name": "lutskanu/php-google-instance-id",
+  "license": "MIT",
+  "keywords": [
+    "Google",
+    "Instance Id",
+    "iid",
+    "PHP"
+  ],
+  "authors": [
+    {
+      "name": "Sergey Lutskanu",
+      "email": "sergey@lutskanu.ru"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.2.1",
+    "symfony/serializer": "~2.8 | ~3.0",
+    "symfony/property-access": "~2.8 | ~3.0",
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.4.8",
+    "mockery/mockery": "~0.9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "lutskanu\\GoogleInstanceId\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "lutskanu\\GoogleInstanceId\\Tests\\": "tests/"
+    }
+  }
+}
